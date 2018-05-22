@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Red Social</title>
+    <link rel="stylesheet" href="../materialize/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<!-- Navbar -->
+
+<header>
+        <nav class="nav-extended #1e88e5 blue darken-1">
+           <div class="nav-wrapper">
+               <a href="#" class="brand-logo center"><img src="../assets/images/go.png" alt="" ></a>
+               <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+               <a href="#" data-activates="mobile-demo" class="button-collapse right">        
+                 <ul>
+                   <li><input id="last_name" type="text" class="validate"placeholder="search"></li>  
+                   <li><i class="small material-icons">search</i></li>
+                  </ul>
+                </a>
+                
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                   <li><input id="last_name" type="text" class="validate"placeholder="search"></li>  
+                   <li><i class="small material-icons">search</i></li>
+                   <li><a href="home.html">Home</a></li>
+                   <li><a href="friends.html">Amigos</a></li>
+                   <li><a class="modal-trigger" href="#modal2">Planea tu viaje</a></li>
+                   <li><a class="modal-trigger" href="#modal1" ><img src="../assets/images/userman.png" width="50px" alt=""></a></li>
+                </ul>
+            </div>
+        </nav>  
+    </header>
+
+<!--Profile view-->
+
+<div id="profile-page-header" class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" id="backy" src="../assets/images/beach.jpg" alt="user background" width="10%">
+        </div>
+        <figure class="card-profile-image">
+          <img src="../assets/images/userman.png" alt="profile image" class="circle z-depth-2 responsive-img activator gradient-45deg-light-blue-cyan gradient-shadow">
+        </figure>
+        <div class="card-content">
+          <div class="row pt-2">
+            <div class="col s12 m3 offset-m2">
+              <h4 class="card-title grey-text text-darken-4">User</h4>
+              <p class="medium-small grey-text">la vida es bella</p>
+            </div>
+            <div class="col s12 m2 center-align">
+              <h4 class="card-title grey-text text-darken-4">100</h4>
+              <p class="medium-small grey-text"><i class="tiny material-icons cyan-text text-darken-2">favorite_border</i>Puntos</p>
+            </div>
+            <div class="col s12 m2 center-align">
+              <h4 class="card-title grey-text text-darken-4">
+                    <i class="tiny material-icons cyan-text text-darken-2">star star star star_half star_border</i>
+              </h4>
+              <p class="medium-small grey-text">Puntaje</p>
+            </div>
+            <div class="col s12 m1 right-align">
+              <a class="btn-floating activator waves-effect waves-light rec accent-2 right">
+                <i class="material-icons">perm_identity</i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card-reveal">
+          <p>
+            <span class="card-title grey-text text-darken-4">User
+              <i class="material-icons right">close</i>
+            </span>
+            <span>
+              <i class="material-icons cyan-text text-darken-2">perm_identity</i>Pilgrim</span>
+          </p>
+          <p>Los viajes enriquecen el alma.</p>
+          <p>
+            <i class="material-icons cyan-text text-darken-2">perm_phone_msg</i> +1 (612) 222 8989</p>
+          <p>
+            <i class="material-icons cyan-text text-darken-2">email</i> user@live.com</p>
+          <p>
+            <i class="material-icons cyan-text text-darken-2">cake</i>beach mode</p>
+          <p>
+            <i class="material-icons cyan-text text-darken-2">airplanemode_active</i>Viajando ahora</p>
+        </div>
+      </div>
+
+      <ul id="profile-page-about-details" class="collection z-depth-1">
+            <li class="collection-item">
+              <div class="row">
+                <div class="col s5">
+                  <i class="material-icons left">airplanemode_active</i>Playa del Carmen</div>
+                <div class="col s7 right-align light-green-text darken-3">$4,000</div>
+              </div>
+            </li>
+            <li class="collection-item">
+              <div class="row">
+                <div class="col s5">
+                  <i class="material-icons left">airplanemode_active</i>Acapulco</div>
+                <div class="col s7 right-align light-green-text darken-3">$5,000</div>
+              </div>
+            </li>
+            <li class="collection-item">
+              <div class="row">
+                <div class="col s5">
+                  <i class="material-icons left">airplanemode_active</i> Hawai</div>
+                <div class="col s7 right-align light-green-text darken-3">$8,000</div>
+              </div>
+            </li>
+            <li class="collection-item">
+              <div class="row">
+                <div class="col s5">
+                  <i class="material-icons left">airplanemode_active</i>Ensenada</div>
+                <div class="col s7 right-align light-green-text darken-3">$5,000</div>
+              </div>
+            </li>
+          </ul>
+
+   <!-- User Modal -->
+
+   <div id="modal1" class="modal">
+        <i class="tiny material-icons right">close</i>
+        <p><img src="../assets/images/userman.png" width="90px" alt=""></p>
+        <h2>Elena Troya</h2>
+        <p><span><i class="mdi-action-perm-identity cyan-text text-darken-2"></i>---Wanderlust---</span></p>
+        <p>Los viajes ilustran...</p>
+        <p><i class="tiny material-icons cyan-text text-darken-2">favorite_border</i> Puntos :  8989</p>
+        <p><i class="tiny material-icons cyan-text text-darken-2">email</i> elena@troya.com</p>
+        <p>Puntaje <i class="tiny material-icons cyan-text text-darken-2">star star star star_half star_border</i></p>
+        <p><i class="tiny material-icons cyan-text text-darken-2">airplanemode_active</i>viajando ahora</p>
+        <a href="profile.html" class="modal-trigger waves-effect deep-purple lighten-3 btn planear">Ver perfil de viajes</a>
+    </div>
+
+
+    <!-- Plan Modal -->
+
+    <div id="modal2" class="modal">
+            <div class="row ">
+                <div class="col s9 left"> 
+                    <h5>¡Crea el viaje perfecto!</h5>
+                </div>
+                <div class="col s3">
+                    <img class="right" src="../assets/images/go.png" width="50px" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <button class="btn waves-effect orange darken-1" type="submit" name="action">Hotel
+                    <i class="material-icons right">hotel</i>
+                </button>      
+                <button class="btn waves-effect orange darken-1" type="submit" name="action">Auto
+                    <i class="material-icons right">directions_car</i>
+                </button>  
+            </div>
+            <div class="row">
+                <div class="col s4">
+                    <p>
+                        <input type="checkbox" id="test5" />
+                        <label for="test5">Ida y vuelta</label>
+                    </p>
+                </div>
+                <div class="col s4">
+                    <p>
+                        <input type="checkbox" id="test5" />
+                        <label for="test5">Solo ida</label>
+                    </p>
+                </div>
+                <div class="col s4">
+                    <p>
+                        <input type="checkbox" id="test5" />
+                        <label for="test5">Multidestino</label>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6">
+                    <p>Origen</p>
+                    <input type="text" placeholder="CDMX">
+                </div>
+                <div class="col s6">
+                    <p>Destino</p>
+                    <input type="text" placeholder="¿A dónde quieres viajar?">
+                </div> 
+            </div>
+            <div class="row">
+                <div class="col s4">
+                    <p>Fechas</p>
+                    <input type="text" placeholder="Partida">                
+                </div>
+                <div class="col s4">
+                    <p>-</p>
+                    <input type="text" placeholder="Regreso">                
+                </div>
+                <div class="col s4">
+                    <p>Pasajeros</p>
+                    <input type="text" placeholder="¿Cuantas personas?">                
+                </div>
+                <a class="waves-effect orange darken-1 btn">¡Encuentra tu viaje!</a>
+            </div>
+              
+        </div>
+              
+       <!-- User SideNav -->
+    
+       <ul id="slide-out" class="side-nav">
+            <li>
+               <div class="user-view">
+                    <div class="background">
+                        <img src="../assets/images/gray_suitcase.jpg" class="center" width="160%">
+                    </div>
+                    <div class="row">
+                        <div class="col s4"></div>
+                        <div class="col s3 ">
+                           <img class="circle" src="../assets/images/userman.png" width="90px" alt="">
+                        </div>
+                        <div class="col s5"></div>
+                    </div>
+                    <h5 class="white-text">Elena Troya</h5>
+                    <h5 class="white-text">elena@troya.com</h5>
+              </div>
+            </li>
+            <p>Puntaje <i class="tiny material-icons cyan-text text-darken-2">star star star star_half star_border</i></p>
+            <li><div class="divider"></div></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="friends.html">Amigos</a></li>
+            <li><a class="modal-trigger" href="#modal2">Planea tu viaje</a></li>
+            <a href="profile.html" class="modal-trigger waves-effect deep-purple lighten-3 btn planear">Ver perfil de viajes</a>
+            <br>
+            <a href="#" class="modal-trigger waves-effect  green accent-3 btn planear">¡RECOMPENSAS!</a>
+        </ul>
+    
+ 
+
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
+      <script src="../js/app.js"></script>
+  </body>
+  </html>
